@@ -1,0 +1,150 @@
+.header 
+  height: 100vh 
+  & .top-menu 
+    position: fixed
+    width: 100% 
+    padding: 30px 0 
+    background: #ffffff
+    z-index: 2
+    top: 0
+    & .top-menu-wrap
+      display: flex 
+      align-items: center
+      justify-content: space-between
+      & .logo 
+        display: flex
+        align-items: center
+        & h3 
+          margin-left: 10px 
+          text-transform: uppercase 
+          & a 
+            color: #262626
+            +ral_med 
+      & .menu 
+        & a 
+          text-transform: uppercase
+          color: #262626
+          +ral_med
+          font-size: 14px 
+          font-weight: 600
+          margin-right: 20px
+          transition: 0.3s
+          &:hover
+            color: #EE3B24
+          &:last-of-type
+            margin-right: 0 
+  & .header-slider-wrap
+    position: relative
+    top: 0
+    & .header-slider
+      width: 100%
+      & .slick-list 
+        overflow: hidden
+        & .slick-track 
+          display: flex 
+          & .header-block
+            text-align: center
+            height: 100vh 
+            position: relative
+            &::before
+              content: ''
+              position: absolute
+              top: 0
+              left: 0
+              width: 100%
+              height: 100%
+              background: url(../img/header/5.png)
+            & .content 
+              color: #ffffff
+              & img 
+                width: 100%
+                height: 100% 
+              & .overlay
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+                & .border 
+                  position: relative
+                  width: 400px 
+                  margin: auto
+                  border-top: 1px solid #ffffff
+                  border-bottom: 1px solid #ffffff
+                  & h2 
+                    font-size: 60px 
+                    +ral_med   
+                  &::before
+                    content: ''
+                    position: absolute
+                    width: 2px 
+                    height: 110px 
+                    background: #EE3B24
+                    left: 10px
+                    top: -10px  
+                  &::after
+                    content: ''
+                    position: absolute
+                    width: 2px 
+                    height: 110px 
+                    background: #EE3B24
+                    right: 10px
+                    top: -10px           
+                & h4 
+                  margin-top: 30px 
+                  font-size: 50px 
+                  +ral_light
+                  & span 
+                    +ral_med
+                & .line 
+                  width: 100px 
+                  height: 5px 
+                  background: #EE3B24
+                  margin: 20px auto 30px 
+                & p 
+                  text-transform: uppercase
+                  +ral_med
+                  font-size: 40px 
+    & .btn 
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      display: flex
+      justify-content: space-between
+      width: 100% 
+      z-index: 1
+      padding: 0 30px 
+      & button 
+        & .fas 
+          +solid 
+          color: rgba(#ffffff,0.5)
+          font-size: 25px 
+          border: 1px solid rgba(#ffffff,0.5)
+          border-radius: 50%
+          width: 50px 
+          height: 50px  
+          display: flex
+          align-items: center
+          justify-content: center
+          transition: 0.3s
+          &:hover
+            background: #EE3B24
+            color: #ffffff
+    & .slick-dots 
+        display: flex
+        align-items: center
+        position: absolute
+        bottom: 50px 
+        left: 50%
+        transform: translateX(-50%)
+        & li 
+          list-style: none 
+          margin: 0 5px 
+          & button 
+            font-size: 0
+            width: 20px 
+            height: 20px 
+            border-radius: 50%
+            border: 2px solid #ffffff
+        & .slick-active 
+          & button 
+            background: #EE3B24          
