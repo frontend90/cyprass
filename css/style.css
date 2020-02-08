@@ -287,4 +287,107 @@ body {
 .header .header-slider-wrap .slick-dots .slick-active button {
   background: #EE3B24;
 }
+
+.services {
+  padding: 100px 0;
+}
+
+.services .title {
+  text-align: center;
+}
+
+.services .title h4 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #EE3B24;
+}
+
+.services .title h4 span {
+  font-family: 'Raleway-Medium';
+}
+
+.services .title p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: 'Lato-Regular';
+}
+
+.services .title .line {
+  width: 100px;
+  height: 5px;
+  background: #EE3B24;
+  margin: 20px auto 90px;
+}
+
+.services .services-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services .services-wrap .block {
+  text-align: center;
+  margin-left: 55px;
+}
+
+.services .services-wrap .block:first-of-type {
+  margin-left: 0;
+}
+
+.services .services-wrap .block:hover .icon .fas {
+  color: #EE3B24;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.services .services-wrap .block:hover .content h5 {
+  color: #EE3B24;
+}
+
+.services .services-wrap .block .icon .fas {
+  font-family: 'fa-solid-900';
+  font-size: 50px;
+  color: #000000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.services .services-wrap .block .content {
+  margin-top: 40px;
+}
+
+.services .services-wrap .block .content h5 {
+  text-transform: uppercase;
+  font-family: 'Raleway-Medium';
+  color: #000000;
+  font-size: 18px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.services .services-wrap .block .content p {
+  margin-top: 40px;
+}
+
+.services .services-wrap .block .btn {
+  margin-top: 40px;
+}
+
+.services .services-wrap .block .btn button {
+  background: #333333;
+  width: 120px;
+  height: 40px;
+  color: #ffffff;
+  font-family: 'Raleway-Medium';
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.services .services-wrap .block .btn button:hover {
+  background: #EE3B24;
+}
 /*# sourceMappingURL=style.css.map */

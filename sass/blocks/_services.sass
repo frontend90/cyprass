@@ -1,0 +1,62 @@
+.services 
+  padding: 100px 0
+  & .title 
+    text-align: center
+    & h4 
+      font-size: 50px 
+      text-transform: uppercase
+      color: #EE3B24
+      & span 
+        +ral_med
+    & p 
+      margin-top: 20px 
+      font-size: 18px 
+      +lato_reg
+    & .line 
+      width: 100px 
+      height: 5px 
+      background: #EE3B24
+      margin: 20px auto 90px 
+  & .services-wrap
+    display: flex
+    justify-content: space-between
+    & .block 
+      text-align: center
+      margin-left: 55px
+      &:first-of-type
+        margin-left: 0 
+      &:hover .icon .fas
+        color: #EE3B24
+        transform: translateY(-20px)
+      &:hover .content h5 
+        color: #EE3B24
+      & .icon 
+        & .fas 
+          +solid 
+          font-size: 50px 
+          color: #000000
+          transition: 0.3s
+      & .content 
+        margin-top: 40px
+        & h5 
+          text-transform: uppercase
+          +ral_med
+          color: #000000
+          font-size: 18px 
+          transition: 0.3s
+        & p 
+          margin-top: 40px 
+      & .btn 
+        margin-top: 40px 
+        & button 
+          background: #333333
+          width: 120px
+          height: 40px 
+          color: #ffffff
+          +ral_med
+          border-radius: 5px 
+          transition: 0.3s
+          &:hover
+            background: #EE3B24
+
+
