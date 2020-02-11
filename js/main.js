@@ -39,6 +39,28 @@ $(function () {
   });
 });
 
+/*************** фильтр about   **************/
+$(function () {
+  $('.about-nav .block').click(function (event) {
+    event.preventDefault();
+    var get_id = this.id;
+    var get_current = $('.about-content .block.' + get_id);
+    $('.about-content .block').not(get_current).hide(500);
+    get_current.show(500);
+  });
+});
+
+/*************  active button   *****************/
+var header = document.getElementById("active-block");
+var btns = header.getElementsByClassName("block");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
 /*********************  плавный скролл    *********/
 $(document).ready(function () {
   $('a[href^="#"]').click(function () {
