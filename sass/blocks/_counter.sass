@@ -1,0 +1,43 @@
+.counter 
+  background: #01A6E0
+  padding-top: 100px 
+  padding-bottom: 130px  
+  & .counter-wrap 
+    display: flex
+    justify-content: space-between
+    & .block 
+      border: 5px solid #ffffff
+      border-radius: 50%
+      width: 200px 
+      height: 200px 
+      position: relative
+      color: #ffffff
+      z-index: 1
+      & .icon 
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        & .fas 
+          +solid
+          font-size: 40px
+      & .numscroller
+        position: absolute
+        bottom: 0
+        left: 50% 
+        transform: translate(-50%,50%)
+        font-size: 50px 
+        z-index: 2
+        width: 70px
+        display: flex
+        justify-content: center 
+        background: #01A6E0
+      & h5 
+        text-transform: uppercase
+        position: absolute
+        left: 50%
+        bottom: 0
+        transform: translate(-50%,220%)
+        z-index: 3
+        font-size: 20px 
+        letter-spacing: 1.8px 
