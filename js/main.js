@@ -50,7 +50,7 @@ $(function () {
   });
 });
 
-/*************  active button   *****************/
+/*************  about active button   *****************/
 var header = document.getElementById("active-block");
 var btns = header.getElementsByClassName("block");
 for (var i = 0; i < btns.length; i++) {
@@ -78,3 +78,17 @@ $(document).ready(function () {
     return false;
   });
 });
+
+/*************   burger    *******************/
+var burger = document.getElementsByClassName('burger');
+
+for (var i = 0; i < burger.length; i++) {
+  burger[i].addEventListener('click', function () {
+    if (!(this.classList.contains('active'))) {
+      for (var i = 0; i < burger.length; i++) {
+        burger[i].classList.remove('active');
+      }
+      this.classList.add('active');
+    }
+  })
+}

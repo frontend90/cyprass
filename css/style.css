@@ -975,4 +975,120 @@ h4 {
   font-size: 20px;
   letter-spacing: 1.8px;
 }
+
+.test {
+  padding: 100px 0;
+}
+
+.test .test-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.test .test-wrap .video-block {
+  height: 285px;
+  width: 510px;
+}
+
+.test .test-wrap .video-block iframe {
+  border: none;
+  -webkit-box-shadow: 0 5px 10px rgba(106, 106, 106, 0.5);
+          box-shadow: 0 5px 10px rgba(106, 106, 106, 0.5);
+}
+
+.test .test-wrap .burgers {
+  margin-left: 50px;
+}
+
+.test .test-wrap .burgers .burger {
+  width: 600px;
+  margin-top: 10px;
+}
+
+.test .test-wrap .burgers .burger:first-of-type {
+  margin-top: 0;
+}
+
+.test .test-wrap .burgers .burger.active .desc {
+  display: block;
+}
+
+.test .test-wrap .burgers .burger.active .title {
+  border: 1px solid #EE3B24;
+}
+
+.test .test-wrap .burgers .burger.active .title .plus span {
+  background: #EE3B24;
+}
+
+.test .test-wrap .burgers .burger.active .title span::before {
+  display: none;
+}
+
+.test .test-wrap .burgers .burger .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FAFAFA;
+  padding: 0 20px;
+  height: 40px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.4);
+}
+
+.test .test-wrap .burgers .burger .title h5 {
+  font-family: 'Raleway-Medium';
+  font-size: 18px;
+  color: #333333;
+}
+
+.test .test-wrap .burgers .burger .title .plus {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.test .test-wrap .burgers .burger .title .plus span {
+  background: #333333;
+  width: 10px;
+  height: 3px;
+}
+
+.test .test-wrap .burgers .burger .title .plus span::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  background: #333333;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.test .test-wrap .burgers .burger .desc {
+  padding: 20px;
+  display: none;
+}
+
+.test .test-wrap .burgers .burger .desc p {
+  font-size: 14px;
+  color: #333333;
+}
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+.test 
+  padding: 100px 0 
+  & .test-wrap 
+    display: flex
+    justify-content: space-between
+    & .video-block 
+      height: 285px 
+      width: 510px 
+      & iframe 
+        border: none 
+        box-shadow: 0 5px 10px rgba(#6a6a6a,0.5)
+    & .burgers
+      margin-left: 50px 
+      & .burger 
+        width: 600px 
+        margin-top: 10px
+        &:first-of-type
+          margin-top: 0 
+        &.active .desc 
+          display: block 
+        &.active .title 
+          border: 1px solid #EE3B24
+        &.active .title .plus span 
+          background: #EE3B24
+        &.active .title span::before
+          display: none 
+        & .title 
+          display: flex
+          justify-content: space-between
+          align-items: center
+          background: #FAFAFA
+          padding: 0 20px
+          height: 40px 
+          border-bottom: 1px solid rgba(#333333,0.4)
+          & h5 
+            +ral_med
+            font-size: 18px 
+            color: #333333
+          & .plus 
+            width: 10px 
+            height: 10px 
+            position: relative
+            display: flex
+            align-items: center
+            justify-content: center
+            & span 
+              background: #333333
+              width: 10px 
+              height: 3px 
+              &::before
+                content: ''
+                position: absolute
+                width: 10px 
+                height: 3px 
+                background: #333333
+                transform: rotate(90deg)
+        & .desc 
+          padding: 20px 
+          display: none
+          & p 
+            font-size: 14px 
+            color: #333333
