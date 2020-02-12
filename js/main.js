@@ -1,4 +1,4 @@
-/************    slick      **************/
+/************    header slick      **************/
 $('.header-slider').slick({
   prevArrow: $('.header-slider-left'),
   nextArrow: $('.header-slider-right'),
@@ -92,3 +92,12 @@ for (var i = 0; i < burger.length; i++) {
     }
   })
 }
+
+/************    team slick      **************/
+$('.team-slider').slick({
+  prevArrow: $('.team-slider-left'),
+  nextArrow: $('.team-slider-right'),
+  dots: true,
+  slidesToShow: 4,
+  slidesToScroll: 1
+});

@@ -3,11 +3,11 @@
   & .top-menu 
     position: fixed
     width: 100% 
-    padding: 30px 0 
+    padding: 25px 0 
     background: #ffffff
     z-index: 2
     top: 0
-    box-shadow: 0 0 10px rgba(#000000,0.2)
+    box-shadow: 0 0 10px rgba(#000000,0.12)
     & .top-menu-wrap
       display: flex 
       align-items: center
@@ -24,11 +24,11 @@
       & .menu 
         & a 
           text-transform: uppercase
-          color: #262626
+          color: #3a3a3a
           +ral_med
           font-size: 14px 
-          font-weight: 600
-          margin-right: 20px
+          font-weight: 700
+          margin-right: 30px
           transition: 0.3s
           &:hover
             color: #EE3B24
@@ -90,17 +90,18 @@
                     background: #EE3B24
                     right: 10px
                     top: -10px           
-                & h4 
-                  margin-top: 30px 
-                  font-size: 50px 
+                & h3 
+                  margin-top: 20px 
+                  font-size: 70px 
                   +ral_light
+                  font-weight: 300
                   & span 
                     +ral_med
                 & p 
                   text-transform: uppercase
                   +ral_med
-                  font-size: 40px 
-                  margin-top: 30px 
+                  font-size: 46px 
+                  margin-top: 40px 
     & .btn 
       position: absolute
       top: 50%
@@ -114,7 +115,7 @@
         & .fas 
           +solid 
           color: rgba(#ffffff,0.5)
-          font-size: 25px 
+          font-size: 20px 
           border: 1px solid rgba(#ffffff,0.5)
           border-radius: 50%
           width: 50px 
