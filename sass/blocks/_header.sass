@@ -102,31 +102,34 @@
                   +ral_med
                   font-size: 46px 
                   margin-top: 40px 
-    & .btn 
+    & button 
+      & .fas 
+        +solid 
+        color: rgba(#ffffff,0.5)
+        font-size: 20px 
+        border: 1px solid rgba(#ffffff,0.5)
+        border-radius: 50%
+        width: 50px 
+        height: 50px  
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: 0.3s
+        &:hover
+          background: #EE3B24
+          color: #ffffff
+    & .header-slider-left
       position: absolute
       top: 50%
+      left: 0
       transform: translateY(-50%)
-      display: flex
-      justify-content: space-between
-      width: 100% 
-      z-index: 1
-      padding: 0 30px 
-      & button 
-        & .fas 
-          +solid 
-          color: rgba(#ffffff,0.5)
-          font-size: 20px 
-          border: 1px solid rgba(#ffffff,0.5)
-          border-radius: 50%
-          width: 50px 
-          height: 50px  
-          display: flex
-          align-items: center
-          justify-content: center
-          transition: 0.3s
-          &:hover
-            background: #EE3B24
-            color: #ffffff
+      padding-left: 30px 
+    & .header-slider-right
+      position: absolute
+      top: 50%
+      right: 0
+      transform: translateY(-50%)
+      padding-right: 30px       
     & .slick-dots 
         display: flex
         align-items: center

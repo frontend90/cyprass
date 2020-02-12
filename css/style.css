@@ -237,23 +237,7 @@ h4 span {
   margin-top: 40px;
 }
 
-.header .header-slider-wrap .btn {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  z-index: 1;
-  padding: 0 30px;
-}
-
-.header .header-slider-wrap .btn button .fas {
+.header .header-slider-wrap button .fas {
   font-family: 'fa-solid-900';
   color: rgba(255, 255, 255, 0.5);
   font-size: 20px;
@@ -274,9 +258,27 @@ h4 span {
   transition: 0.3s;
 }
 
-.header .header-slider-wrap .btn button .fas:hover {
+.header .header-slider-wrap button .fas:hover {
   background: #EE3B24;
   color: #ffffff;
+}
+
+.header .header-slider-wrap .header-slider-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding-left: 30px;
+}
+
+.header .header-slider-wrap .header-slider-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding-right: 30px;
 }
 
 .header .header-slider-wrap .slick-dots {
@@ -1131,6 +1133,7 @@ h4 span {
 
 .team .team-slider-wrap .team-slider .slick-list .slick-track .team-block {
   text-align: center;
+  z-index: 2;
 }
 
 .team .team-slider-wrap .team-slider .slick-list .slick-track .team-block .img {
@@ -1155,10 +1158,10 @@ h4 span {
   position: absolute;
   top: 0;
   left: 0;
-  color: #ffffff;
   width: 100%;
   height: 100%;
-  background: rgba(217, 83, 79, 0.9);
+  color: #ffffff;
+  background: rgba(209, 66, 51, 0.95);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-transform: translateY(-100%);
@@ -1227,22 +1230,7 @@ h4 span {
   margin-top: 10px;
 }
 
-.team .team-slider-wrap .btn {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 110%;
-  z-index: 2;
-}
-
-.team .team-slider-wrap .btn button .fas {
+.team .team-slider-wrap button .fas {
   font-family: 'fa-solid-900';
   background: #EE3B24;
   width: 50px;
@@ -1259,5 +1247,59 @@ h4 span {
           justify-content: center;
   color: #ffffff;
   font-size: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.team .team-slider-wrap button .fas:hover {
+  background: #cccccc;
+  color: #222222;
+}
+
+.team .team-slider-wrap .team-slider-left {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-70px, -50%);
+          transform: translate(-70px, -50%);
+  position: absolute;
+}
+
+.team .team-slider-wrap .team-slider-right {
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(70px, -50%);
+          transform: translate(70px, -50%);
+  position: absolute;
+}
+
+.team .team-slider-wrap .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.team .team-slider-wrap .slick-dots li {
+  list-style: none;
+  margin: 0 5px;
+}
+
+.team .team-slider-wrap .slick-dots li button {
+  font-size: 0;
+  width: 45px;
+  height: 7px;
+  background: #EE3B24;
+  opacity: .5;
+}
+
+.team .team-slider-wrap .slick-dots .slick-active button {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
