@@ -1,0 +1,85 @@
+.contact 
+  padding-top: 30px 
+  padding-bottom: 50px 
+  background: #333333
+  & .contact-wrap 
+    display: flex
+    justify-content: space-between
+    margin-top: 15px 
+    & .block 
+      & .title 
+        & h5 
+          text-transform: uppercase 
+          color: #C5C5C2
+          +ral_med 
+          font-size: 18px 
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            width: 55px 
+            height: 1px 
+            background: #ee3b24
+            left: 0
+            bottom: -10px
+          &::after
+            content: ''
+            position: absolute
+            width: 24px 
+            height: 5px 
+            background: #ee3b24
+            left: calc(27.5px - 12px)
+            bottom: calc(-10px - 2.5px)
+      & .content 
+        margin-top: 35px 
+        & a 
+          display: block 
+          color: #9E9E9E
+          padding: 5px 0 
+          font-size: 14px 
+          transition: 0.3s
+          position: relative
+          &:hover
+            color: #EE3B24
+    & .main-menu 
+      & .content 
+        & a 
+          position: relative
+          &::before
+            content: '>'
+            margin-right: 5px 
+            color: rgba(#9E9E9E,0.4)
+            font-size: 14px 
+    & .userfull
+      & .content 
+        & a 
+          position: relative
+          &::before
+            content: '>'
+            margin-right: 5px 
+            color: rgba(#9E9E9E,0.4)
+            font-size: 14px 
+    & .contact-us
+      & .content 
+        & p 
+          display: flex
+          align-items: center
+          & .fas 
+            +solid 
+            color: #EE3B24
+            font-size: 14px 
+          & a 
+            padding-left: 10px 
+    & .tags
+      & .content 
+        width: 265px 
+        & a 
+          display: inline-block 
+          padding: 8px 10px 
+          background: #2c2c2c
+          color: #c4c4c4
+          font-size: 14px 
+          margin: 3px
+          &:hover
+            color: #ffffff
+            background: #EE3B24

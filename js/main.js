@@ -121,3 +121,17 @@ $('.feedback-slider').slick({
   slidesToScroll: 1,
   autoplay: false
 });
+
+/************    clients slick      **************/
+$('.clients-slider').slick({
+  arrows: false,
+  dots: false,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  autoplay: true 
+});
+
+/***************   mask input     ***********/
+$(function(){
+  $("#phone").mask("8(999) 99-99-999");
+});

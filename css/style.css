@@ -1721,4 +1721,286 @@ h4 span {
 .feedback .feedback-slider-wrap .btn button .fas:hover {
   background: #222222;
 }
+
+.clients {
+  background: #f2f2f2;
+  padding: 30px 0;
+}
+
+.clients .clients-slider .slick-list {
+  overflow: hidden;
+}
+
+.clients .clients-slider .slick-list .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 230px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.clients .clients-slider .slick-list .slick-track .clients-block {
+  text-align: center;
+}
+
+.touch {
+  padding-top: 90px;
+  padding-bottom: 130px;
+}
+
+.touch .title {
+  text-align: center;
+}
+
+.touch .form {
+  margin-top: 60px;
+}
+
+.touch .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.touch .form form .form-input .block {
+  width: 555px;
+  height: 45px;
+  position: relative;
+  border: 1px solid #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+  margin-top: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.touch .form form .form-input .block:first-of-type {
+  margin-top: 0;
+}
+
+.touch .form form .form-input .block:hover {
+  border: 1px solid #EE3B24;
+  background: #eeeeee;
+}
+
+.touch .form form .form-input .block input {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  color: #888888;
+}
+
+.touch .form form .form-input .block .fas {
+  font-family: 'fa-solid-900';
+  font-size: 20px;
+  color: #888888;
+  padding-left: 10px;
+}
+
+.touch .form form .form-textarea {
+  border: 1px solid #eeeeee;
+  width: 555px;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.touch .form form .form-textarea:hover {
+  background: #eeeeee;
+  border: 1px solid #EE3B24;
+}
+
+.touch .form form .form-textarea:focus-within .fas {
+  display: none;
+}
+
+.touch .form form .form-textarea textarea {
+  width: 100%;
+  height: 100%;
+  color: #888888;
+  font-size: 14px;
+  padding: 10px 0 0 15px;
+}
+
+.touch .form form .form-textarea .fas {
+  font-family: 'fa-solid-900';
+  color: #888888;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  margin-left: 10px;
+}
+
+.touch .form .btn {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.touch .form .btn button {
+  background: #ee3b24;
+  color: #ffffff;
+  border-radius: 3px;
+  width: 145px;
+  height: 45px;
+  font-family: 'Raleway-Medium';
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.touch .form .btn button:hover {
+  background: #333333;
+}
+
+.map {
+  width: 100%;
+  height: 450px;
+}
+
+.map #map {
+  height: 100%;
+  width: 100%;
+}
+
+.contact {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background: #333333;
+}
+
+.contact .contact-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+
+.contact .contact-wrap .block .title h5 {
+  text-transform: uppercase;
+  color: #C5C5C2;
+  font-family: 'Raleway-Medium';
+  font-size: 18px;
+  position: relative;
+}
+
+.contact .contact-wrap .block .title h5::before {
+  content: '';
+  position: absolute;
+  width: 55px;
+  height: 1px;
+  background: #ee3b24;
+  left: 0;
+  bottom: -10px;
+}
+
+.contact .contact-wrap .block .title h5::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 5px;
+  background: #ee3b24;
+  left: calc(27.5px - 12px);
+  bottom: calc(-10px - 2.5px);
+}
+
+.contact .contact-wrap .block .content {
+  margin-top: 35px;
+}
+
+.contact .contact-wrap .block .content a {
+  display: block;
+  color: #9E9E9E;
+  padding: 5px 0;
+  font-size: 14px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+.contact .contact-wrap .block .content a:hover {
+  color: #EE3B24;
+}
+
+.contact .contact-wrap .main-menu .content a {
+  position: relative;
+}
+
+.contact .contact-wrap .main-menu .content a::before {
+  content: '>';
+  margin-right: 5px;
+  color: rgba(158, 158, 158, 0.4);
+  font-size: 14px;
+}
+
+.contact .contact-wrap .userfull .content a {
+  position: relative;
+}
+
+.contact .contact-wrap .userfull .content a::before {
+  content: '>';
+  margin-right: 5px;
+  color: rgba(158, 158, 158, 0.4);
+  font-size: 14px;
+}
+
+.contact .contact-wrap .contact-us .content p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-wrap .contact-us .content p .fas {
+  font-family: 'fa-solid-900';
+  color: #EE3B24;
+  font-size: 14px;
+}
+
+.contact .contact-wrap .contact-us .content p a {
+  padding-left: 10px;
+}
+
+.contact .contact-wrap .tags .content {
+  width: 265px;
+}
+
+.contact .contact-wrap .tags .content a {
+  display: inline-block;
+  padding: 8px 10px;
+  background: #2c2c2c;
+  color: #c4c4c4;
+  font-size: 14px;
+  margin: 3px;
+}
+
+.contact .contact-wrap .tags .content a:hover {
+  color: #ffffff;
+  background: #EE3B24;
+}
 /*# sourceMappingURL=style.css.map */
