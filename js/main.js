@@ -111,3 +111,13 @@ $('.blog-slider').slick({
   slidesToScroll: 2,
   autoplay: true
 });
+
+/************    feddback slick      **************/
+$('.feedback-slider').slick({
+  prevArrow: $('.feedback-slider-left'),
+  nextArrow: $('.feedback-slider-right'),
+  dots: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: false
+});

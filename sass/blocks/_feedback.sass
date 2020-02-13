@@ -1,0 +1,75 @@
+.feedback 
+  padding-top: 90px 
+  padding-bottom: 130px 
+  & .title 
+    text-align: center
+  & .feedback-slider-wrap
+    position: relative
+    margin-top: 60px 
+    & .feedback-slider 
+      & .slick-list 
+        overflow: hidden
+        & .slick-track 
+          display: flex
+          justify-content: center
+          & .feedback-block 
+            text-align: center
+            max-width: 800px 
+            margin: auto
+            & .img 
+              width: 152px 
+              height: 152px 
+              margin: auto
+              & img 
+                border-radius: 50% 
+                border: 5px solid rgba(#000000,0.09)
+                width: 100%
+                height: 100%
+            & .name 
+              margin-top: 20px 
+              & h5 
+                text-transform: uppercase
+                font-size: 26px 
+                +ral_med
+                color: #EE3B24
+            & .feedback-line 
+              margin: 20px auto
+              width: 120px 
+              border: 0.5px solid #cccccc
+            & .prof 
+              & p 
+                font-size: 18px 
+                color: #555555
+                +ral_med
+            & .content 
+              margin-top: 40px 
+              & p 
+                color: #636363
+                & .fas 
+                  +solid
+                  font-size: 25px 
+                  color: #EE3B24
+                & .fa-quote-left
+                  padding-right: 10px 
+                & .fa-quote-right
+                  padding-left: 10px   
+    & .btn     
+      margin-top: 50px 
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      & button 
+        & .fas 
+          +solid 
+          background: #EE3B24
+          width: 50px 
+          height: 50px 
+          border-radius: 50%
+          display: flex
+          align-items: center
+          justify-content: center
+          color: #ffffff
+          font-size: 20px 
+          transition: 0.3s
+          &:hover
+            background: #222222    
