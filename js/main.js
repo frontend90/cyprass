@@ -102,3 +102,12 @@ $('.team-slider').slick({
   slidesToScroll: 1,
   autoplay: true
 });
+
+/************    blog slick      **************/
+$('.blog-slider').slick({
+  arrows: false,
+  dots: true,
+  slidesToShow: 4,
+  slidesToScroll: 2,
+  autoplay: true
+});
