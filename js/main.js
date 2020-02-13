@@ -128,10 +128,20 @@ $('.clients-slider').slick({
   dots: false,
   slidesToShow: 5,
   slidesToScroll: 1,
-  autoplay: true 
+  autoplay: true
 });
 
 /***************   mask input     ***********/
-$(function(){
+$(function () {
   $("#phone").mask("8(999) 99-99-999");
+});
+
+/*****   плавный скролл с активными блоками   ******/
+$('.navigation').singlePageNav({
+  currentClass: 'active',
+  changeHash: true,
+  scrollSpeed: 10000,
+  offset: 0,
+  filter: ':not(.external)',
+  easing: 'swing',
 });
