@@ -99,5 +99,6 @@ $('.team-slider').slick({
   nextArrow: $('.team-slider-right'),
   dots: true,
   slidesToShow: 4,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  autoplay: true
 });

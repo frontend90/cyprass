@@ -78,7 +78,7 @@ h4 span {
   width: 100%;
   padding: 25px 0;
   background: #ffffff;
-  z-index: 2;
+  z-index: 5;
   top: 0;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
@@ -481,6 +481,9 @@ h4 span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .skills .skills-wrap .block .skill .content h5 {
@@ -1301,5 +1304,148 @@ h4 span {
 
 .team .team-slider-wrap .slick-dots .slick-active button {
   opacity: 1;
+}
+
+.pricing {
+  background: url(../img/pricing/1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding-top: 90px;
+  padding-bottom: 130px;
+}
+
+.pricing .title {
+  text-align: center;
+}
+
+.pricing .title h4 {
+  color: #ffffff;
+}
+
+.pricing .title p {
+  color: #ffffff;
+}
+
+.pricing .pricing-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 70px;
+}
+
+.pricing .pricing-wrap .card {
+  width: 390px;
+  text-align: center;
+  z-index: 1;
+  -webkit-box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.3);
+}
+
+.pricing .pricing-wrap .card .title {
+  padding: 25px 0;
+  background: #434343;
+  color: #ffffff;
+  position: relative;
+}
+
+.pricing .pricing-wrap .card .title h5 {
+  font-family: 'Raleway-Medium';
+  font-size: 25px;
+}
+
+.pricing .pricing-wrap .card .title p {
+  font-size: 14px;
+  font-family: 'Raleway-Medium';
+  font-weight: 700;
+}
+
+.pricing .pricing-wrap .card .title::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 100%);
+          transform: translate(-50%, 100%);
+  bottom: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #434343;
+}
+
+.pricing .pricing-wrap .card .price {
+  padding: 35px 0;
+  background: #f8f8f8;
+  color: #434343;
+  border-bottom: 1px solid #e6e6e6;
+  line-height: 24px;
+}
+
+.pricing .pricing-wrap .card .price p {
+  font-size: 50px;
+  font-family: 'Raleway-Medium';
+}
+
+.pricing .pricing-wrap .card .price p span {
+  font-size: 30px;
+}
+
+.pricing .pricing-wrap .card .content {
+  background: #ffffff;
+}
+
+.pricing .pricing-wrap .card .content p {
+  padding: 15px 0;
+  border-bottom: 1px solid #e6e6e6;
+  color: #434343;
+  font-size: 18px;
+}
+
+.pricing .pricing-wrap .card .btn {
+  background: #f6f6f6;
+  padding: 15px 0;
+}
+
+.pricing .pricing-wrap .card .btn button {
+  color: #ffffff;
+  font-family: 'Raleway-Medium';
+  font-weight: 700;
+  background: #333333;
+  width: 155px;
+  height: 45px;
+  border-radius: 3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.pricing .pricing-wrap .card .btn button:hover {
+  background: #EE3B24;
+}
+
+.pricing .pricing-wrap .card-active {
+  z-index: 2;
+  width: 410px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.pricing .pricing-wrap .card-active .title {
+  background: #EE3B24;
+}
+
+.pricing .pricing-wrap .card-active .title::before {
+  border-top: 30px solid #EE3B24;
+}
+
+.pricing .pricing-wrap .card-active .btn button {
+  background: #EE3B24;
+}
+
+.pricing .pricing-wrap .card-active .btn button:hover {
+  background: #333333;
 }
 /*# sourceMappingURL=style.css.map */

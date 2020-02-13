@@ -1,0 +1,91 @@
+.pricing 
+  background: url(../img/pricing/1.jpg) no-repeat 
+  background-size: cover 
+  background-position: center center 
+  background-attachment: fixed
+  padding-top: 90px 
+  padding-bottom: 130px 
+  & .title 
+    text-align: center
+    & h4 
+      color: #ffffff
+    & p 
+      color: #ffffff
+  & .pricing-wrap 
+    display: flex
+    justify-content: center
+    margin-top: 70px 
+    & .card 
+      width: 390px 
+      text-align: center
+      z-index: 1
+      box-shadow: 2px 2px 9px rgba(#000000,0.3)
+      & .title 
+        padding: 25px 0 
+        background: #434343
+        color: #ffffff
+        position: relative
+        & h5 
+          +ral_med
+          font-size: 25px 
+        & p 
+          font-size: 14px 
+          +ral_med
+          font-weight: 700
+        &::before
+          content: ''
+          position: absolute
+          width: 0
+          height: 0
+          left: 50%
+          transform: translate(-50%,100%)
+          bottom: 0
+          border-left: 30px solid transparent
+          border-right: 30px solid transparent
+          border-top: 30px solid #434343
+      & .price 
+        padding: 35px 0 
+        background: #f8f8f8
+        color: #434343
+        border-bottom: 1px solid #e6e6e6
+        line-height: 24px 
+        & p 
+          font-size: 50px 
+          +ral_med
+          & span 
+            font-size: 30px 
+      & .content 
+        background: #ffffff
+        & p 
+          padding: 15px 0 
+          border-bottom: 1px solid #e6e6e6
+          color: #434343
+          font-size: 18px 
+      & .btn 
+        background: #f6f6f6
+        padding: 15px 0 
+        & button 
+          color: #ffffff
+          +ral_med
+          font-weight: 700
+          background: #333333
+          width: 155px 
+          height: 45px 
+          border-radius: 3px 
+          transition: 0.3s
+          &:hover
+            background: #EE3B24
+    & .card-active 
+      z-index: 2
+      width: 410px 
+      transform: scale(1.1)
+      & .title 
+        background: #EE3B24
+        &::before
+          border-top: 30px solid #EE3B24
+      & .btn 
+        & button 
+          background: #EE3B24
+          &:hover
+            background: #333333
+
