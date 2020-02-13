@@ -2003,4 +2003,88 @@ h4 span {
   color: #ffffff;
   background: #EE3B24;
 }
+
+.footer {
+  background: #222222;
+  border-top: 1px solid #555555;
+  padding: 30px 0;
+}
+
+.footer .footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer-wrap .copy p {
+  font-size: 18px;
+  color: #c4c4c4;
+}
+
+.footer .footer-wrap .copy p span {
+  color: #EE3B24;
+}
+
+.footer .footer-wrap .social a {
+  margin-left: 10px;
+}
+
+.footer .footer-wrap .social a:first-of-type {
+  margin-left: 0;
+}
+
+.footer .footer-wrap .social a .fas {
+  font-family: 'fa-solid-900';
+  color: #555555;
+  width: 30px;
+  height: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #555555;
+  border-radius: 2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.footer .footer-wrap .social a .fas:hover {
+  border: 1px solid #EE3B24;
+  color: #EE3B24;
+}
+
+.footer .footer-wrap .social a .fab {
+  font-family: 'fa-brands-400';
+  color: #555555;
+  width: 30px;
+  height: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #555555;
+  border-radius: 2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.footer .footer-wrap .social a .fab:hover {
+  border: 1px solid #EE3B24;
+  color: #EE3B24;
+}
 /*# sourceMappingURL=style.css.map */
