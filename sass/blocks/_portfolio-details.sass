@@ -1,0 +1,127 @@
+.portfolio-details 
+  padding-top: 50px 
+  & .title 
+    text-align: center
+    & h5 
+      font-size: 35px 
+      font-weight: 400
+      color: #262626
+    & p 
+      margin-top: 10px
+      font-size: 14px 
+    & .details-line
+      margin-top: 20px 
+      width: 100%
+      height: 1px 
+      background: #eeeeee
+  & .img 
+    margin: auto
+    margin-top: 50px 
+    width: 1140px 
+    & img 
+      width: 100% 
+      height: 400px 
+  & .content 
+    margin-top: 60px 
+    display: flex 
+    justify-content: space-between
+    & .left 
+      max-width: 70%
+      & h5 
+        font-size: 18px 
+        color: #262626
+        +ral_med 
+      & .content-line
+        width: 40px 
+        height: 3px 
+        background: #EE3B24
+        margin: 15px 0 20px 
+      & p 
+        line-height: 25px 
+      & .btn 
+        margin-top: 30px 
+        & button 
+          width: 140px 
+          height: 45px 
+          background: #EE3B24
+          color: #ffffff
+          border-radius: 3px 
+          +ral_med 
+          font-weight: 700
+          transition: 0.3s
+          &:hover
+            background: #333333
+    & .right 
+      & h5 
+        font-size: 18px 
+        color: #262626
+        +ral_med 
+      & .content-line
+        width: 40px 
+        height: 3px 
+        background: #EE3B24
+        margin: 15px 0 20px 
+      & .info 
+        & .date 
+        & .client 
+          margin-top: 10px 
+        & .category 
+          margin-top: 10px 
+        & .block 
+          display: flex
+          font-size: 14px 
+          & p 
+            position: relative
+            padding-left: 10px 
+            &::before
+              content: ''
+              position: absolute
+              background: #6a6a6a
+              top: 50%
+              left: 0
+              transform: translateY(-50%)
+              width: 4px 
+              height: 4px 
+          & span 
+            margin-left: 20px 
+      & .social 
+        margin-top: 40px
+        padding: 20px 
+        background: #eeeeee
+        text-align: center
+        border: 1px solid #cccccc
+        & a 
+          margin-left: 10px 
+          &:first-of-type
+            margin-left: 0
+          & .fas
+            +solid  
+            color: #555555
+            width: 30px 
+            height: 30px 
+            border: 1px solid #555555
+            display: inline-flex
+            align-items: center
+            justify-content: center
+            border-radius: 2px 
+            transition: 0.3s
+            &:hover
+              border: 1px solid #EE3B24
+              color: #EE3B24            
+          & .fab 
+            +brand 
+            color: #555555
+            width: 30px 
+            height: 30px 
+            border: 1px solid #555555
+            display: inline-flex
+            align-items: center
+            justify-content: center
+            border-radius: 2px   
+            transition: 0.3s
+            &:hover
+              border: 1px solid #EE3B24
+              color: #EE3B24    
+              
+
+
