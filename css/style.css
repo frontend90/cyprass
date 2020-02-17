@@ -3220,6 +3220,7 @@ h4 span {
   margin-top: 60px;
   width: 360px;
   position: relative;
+  height: 550px;
 }
 
 .blog-content .blog-content-wrap .blog-sidebar .blog-tab .tweets {
@@ -3371,5 +3372,64 @@ h4 span {
   padding-bottom: 25px;
   line-height: 25px;
   font-size: 14px;
+}
+
+.blog-content .blog-content-wrap .blog-sidebar .blog-stream h5 {
+  font-size: 18px;
+  color: #262626;
+  font-family: 'Raleway-Medium';
+}
+
+.blog-content .blog-content-wrap .blog-sidebar .blog-stream .blog-content-line {
+  width: 100%;
+  height: 1px;
+  background: #cccccc;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.blog-content .blog-content-wrap .blog-sidebar .blog-stream .img {
+  width: 360px;
+  text-align: center;
+}
+
+.blog-content .blog-content-wrap .blog-sidebar .blog-stream .img a img {
+  width: 105px;
+  height: 85px;
+  margin: 0 5px 5px;
+}
+
+.blog-content .blog-content-wrap .blog-sidebar .blog-tags2 {
+  margin-top: 40px;
+  width: 360px;
+}
+
+.blog-content .blog-content-wrap .blog-sidebar .blog-tags2 h5 {
+  font-size: 18px;
+  color: #262626;
+  font-family: 'Raleway-Medium';
+}
+
+.blog-content .blog-content-wrap .blog-sidebar .blog-tags2 .blog-content-line {
+  width: 100%;
+  height: 1px;
+  background: #eeeeee;
+  margin: 20px 0;
+}
+
+.blog-content .blog-content-wrap .blog-sidebar .blog-tags2 a {
+  padding: 8px 10px;
+  margin: 3px;
+  color: #c4c4c4;
+  background: #2c2c2c;
+  font-size: 14px;
+  display: inline-block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.blog-content .blog-content-wrap .blog-sidebar .blog-tags2 a:hover {
+  background: #EE3B24;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
