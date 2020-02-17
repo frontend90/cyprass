@@ -1,0 +1,525 @@
+.blog-content 
+  margin-top: 50px 
+  margin-bottom: 60px 
+  & .blog-content-wrap  
+    display: flex 
+    justify-content: space-between
+    & .blog-title 
+      max-width: 65%
+      & .img 
+        & img
+          width: 100% 
+          height: 400px  
+      & .blog-desc
+        margin-top: 10px 
+        & h5 
+          font-size: 18px 
+          color: #262626
+          +ral_med 
+        & .links 
+          margin-top: 20px
+          display: flex
+          & .link 
+            margin-left: 10px 
+            &:first-of-type
+              margin-left: 0
+            & .fas 
+              +solid 
+              margin-right: 5px
+              color: #555555
+              font-size: 14px 
+            & a 
+              color: #EE3B24
+              font-size: 14px 
+        & p
+          margin-top: 20px 
+          font-size: 14px 
+          line-height: 25px 
+        & blockquote
+          margin: 20px 10px 0
+          padding: 0 25px 
+          border-left: 5px solid #eeeeee 
+          & .fas 
+            font-size: 40px 
+            +solid 
+            margin-right: 10px 
+          & span 
+            letter-spacing: 1px 
+            line-height: 25px
+            font-size: 18px 
+        & .small 
+          font-size: 14px 
+          line-height: 25px 
+        & .blog-content-line 
+          margin: 30px 0 
+          height: 1px 
+          width: 100%
+          background: #eeeeee
+      & .tags 
+        & .tag1 
+          display: flex
+          align-items: center
+          & p 
+            font-size: 14px 
+            margin-right: 10px 
+          & a
+            padding: 6px 15px 
+            background: #EE3B24
+            font-size: 14px 
+            color: #ffffff
+            border-radius: 3px 
+            margin-left: 5px 
+            transition: 0.3s
+            &:hover
+              background: #262626
+            &:first-of-type
+              margin-left: 0
+        & .share
+          margin-top: 30px 
+          padding: 20px 
+          background: #eeeeee
+          border-radius: 3px 
+          border: 1px solid #cccccc
+          display: flex
+          justify-content: space-between
+          align-items: center
+          & p 
+            font-size: 18px 
+            +ral_med 
+            font-weight: 700
+            color: #262626
+          & .social 
+            & a 
+              margin-right: 10px 
+              &:last-of-type
+                margin-right: 0
+              & .fab 
+                +brand 
+                font-size: 16px 
+                width: 30px 
+                height: 30px 
+                border-radius: 50%
+                color: #ffffff
+                display: inline-flex
+                align-items: center
+                justify-content: center
+                transition: 0.3s
+                &:hover
+                  color: #EE3B24
+              & .fa-facebook-f
+                background: #395793
+              & .fa-twitter
+                background: #1CA3DB
+              & .fa-google-plus-g
+                background: #9E3023
+              & .fa-linkedin-in
+                background: #0A6594
+              & .fa-pinterest-p
+                background: #A9272F
+        & .blog-content-line
+          height: 1px 
+          width: 100%
+          background: #eeeeee
+          margin-top: 50px 
+      & .blog-author
+        margin-top: 50px 
+        & h5 
+          font-size: 18px 
+          color: #262626
+          +ral_med 
+        & .blog-content-line
+          margin-top: 30px 
+          height: 1px 
+          width: 100%
+          background: #eeeeee
+        & .well 
+          margin-top: 20px 
+          background: #f5f5f5
+          border-top: 5px solid #EE3B24
+          padding: 20px 
+          border-radius: 4px 
+          display: flex
+          align-items: center
+          & .img 
+            & img 
+              width: 85px 
+              height: 82px 
+          & .desc 
+            margin-left: 20px 
+            & p 
+              line-height: 25px 
+              font-size: 14px 
+      & .blog-posts
+        margin-top: 30px 
+        & h5 
+          font-size: 18px 
+          color: #262626
+          +ral_med 
+        & .blog-content-line
+          width: 100%
+          height: 1px 
+          background: #eeeeee
+          margin-top: 20px 
+        & .cards 
+          margin-top: 20px 
+          display: flex
+          justify-content: space-between
+          padding: 0 10px 
+          & .card 
+            width: 225px 
+            & img 
+              width: 100% 
+            & .content 
+              padding: 15px 
+              background: #f5f5f5
+              & h5 
+                & a 
+                  color: #262626
+                  transition: 0.3s
+                  &:hover
+                    color: #EE3B24
+              & p 
+                margin-top: 20px 
+                line-height: 25px 
+                font-size: 14px 
+      & .blog-comments
+        margin-top: 50px 
+        & h5 
+          font-size: 18px 
+          color: #262626
+          +ral_med 
+        & .blog-content-line 
+          width: 100%
+          height: 1px 
+          background: #eeeeee
+          margin-top: 20px
+        & .comments-list 
+          margin-top: 60px 
+          & .comment 
+            position: relative
+            background: #fafafa
+            padding: 10px 
+            & .avatar 
+              position: absolute
+              top: 0
+              transform: translateY(-50%)
+              & a 
+                & img 
+                  width: 95px 
+                  height: 95px 
+                  border-radius: 50%
+                  border: 10px solid #ffffff
+            & .content 
+              margin-top: 45px 
+              margin-left: 25px 
+              & .title 
+                display: flex
+                align-items: center
+                & span 
+                  font-size: 12px 
+                  margin-left: 10px 
+                  color: #cccccc
+              & p 
+                margin-top: 10px 
+                line-height: 25px 
+                font-size: 14px 
+              & .btn 
+                margin-top: 20px 
+                & button
+                  background: #555
+                  width: 60px 
+                  height: 35px 
+                  color: #ffffff
+                  font-size: 14px 
+                  transition: 0.3s
+                  &:hover
+                    background: #EE3B24
+          & .comment-answer
+            margin: 60px 0
+            margin-left: 60px 
+            position: relative
+            padding: 10px 
+            background: #fafafa
+            & .avatar 
+              position: absolute
+              top: 0
+              transform: translateY(-50%)
+              & a 
+                & img 
+                  width: 95px 
+                  height: 95px 
+                  border-radius: 50%
+                  border: 10px solid #ffffff
+            & .content 
+              margin-top: 45px 
+              margin-left: 25px 
+              & .title 
+                display: flex
+                align-items: center
+                & span 
+                  font-size: 12px 
+                  margin-left: 10px 
+                  color: #cccccc
+              & p 
+                margin-top: 10px 
+                line-height: 25px 
+                font-size: 14px 
+              & .btn 
+                margin-top: 20px 
+                & button
+                  background: #555
+                  width: 60px 
+                  height: 35px 
+                  color: #ffffff
+                  font-size: 14px 
+                  transition: 0.3s
+                  &:hover
+                    background: #EE3B24
+      & .blog-form
+        margin-top: 60px 
+        & h5 
+          font-size: 18px 
+          +ral_med
+          color: #262626
+          & span 
+            color: #EE3B24
+        & .blog-content-line 
+          margin-top: 20px 
+          width: 100%
+          height: 1px 
+          background: #eeeeee
+        & form 
+          margin: auto
+          margin-top: 20px 
+          width: 700px 
+          & .input 
+            display: inline-flex 
+            justify-content: space-between
+            width: 100%
+            & input 
+              width: 335px 
+              height: 45px 
+              border: 1px solid #cccccc
+              padding-left: 15px 
+              border-radius: 2px 
+              font-size: 14px 
+              transition: 0.3s
+              &:hover
+                border: 1px solid #EE3B24
+          & textarea 
+            margin-top: 15px 
+            border: 1px solid #cccccc
+            width: 100%
+            height: 155px 
+            border-radius: 2px 
+            font-size: 14px 
+            padding-left: 15px 
+            padding-top: 10px 
+            transition: 0.3s
+            &:hover
+              border: 1px solid #EE3B24
+          & .btn 
+            margin-top: 30px 
+            text-align: center
+            & button 
+              width: 145px 
+              height: 45px 
+              background: #333333
+              border-radius: 2px 
+              color: #ffffff
+              +ral_med 
+              font-weight: 700
+              transition: 0.3s
+              &:hover
+                background: #EE3B24
+    & .blog-sidebar 
+      & .blog-search 
+        & form 
+          display: flex
+          justify-content: space-between
+          width: 360px 
+          height: 60px 
+          border: 1px solid #c9c9c9
+          font-size: 14px 
+          align-items: center
+          padding: 0 20px
+          & input 
+            width: 100%
+          & .btn 
+            & button 
+              & .fas 
+                +solid 
+                font-size: 24px 
+                color: #3c3c3c 
+      & .latest-posts
+        margin-top: 30px 
+        & h5 
+          color: #262626
+          font-size: 18px 
+          +ral_med 
+        & .blog-content-line 
+          width: 100%
+          height: 1px 
+          background: #eeeeee
+          margin-top: 20px
+          margin-bottom: 35px  
+        & .post 
+          width: 360px 
+          & .img 
+            & a 
+              & img 
+                width: 100%
+                height: 160px 
+          & p 
+            margin-top: 15px 
+            font-size: 14px 
+          & span 
+            margin-top: 10px 
+            display: block 
+            font-size: 14px 
+      & .blog-categories
+        margin-top: 60px
+        & h5 
+          color: #262626
+          font-size: 18px 
+          +ral_med
+          margin-bottom: 20px 
+        & .block 
+          display: flex
+          justify-content: space-between
+          border-bottom: 1px dotted #cccccc
+          padding-bottom: 10px 
+          margin-bottom: 10px 
+          &:last-of-type
+            margin-bottom: 0
+          & p 
+            position: relative
+            padding-left: 20px 
+            &::before
+              content: '>'
+              font-size: 14px 
+              color: #cccccc
+              position: absolute
+              top: 50%
+              transform: translateY(-50%)
+              left: 0
+            & a 
+              color: #222222
+              font-size: 14px 
+              transition: 0.3s
+              &:hover 
+                color: #EE3B24
+          & span 
+            display: block 
+            background: #999999
+            width: 25px 
+            height: 25px 
+            display: flex
+            align-items: center
+            justify-content: center
+            font-size: 12px 
+            color: #ffffff
+            +ral_med 
+            font-weight: 700
+      & .blog-tab
+        margin-top: 60px 
+        width: 360px 
+        position: relative
+        & .tweets 
+          position: absolute
+          & .btn 
+            & button 
+              padding: 10px 15px 
+              background: #f8f8f8
+              border-top: 5px solid #464646
+              border-top-left-radius: 3px 
+              border-top-right-radius: 3px 
+              color: #222222
+              font-size: 14px 
+          & .content 
+            background: #f8f8f8
+            padding: 55px 15px 15px 
+            & .block 
+              border-bottom: 1px solid #eeeeee
+              margin-top: 10px 
+              &:first-of-type
+                margin-top: 0
+              &:last-of-type
+                border-bottom: none 
+              & .title 
+                display: flex
+                justify-content: space-between
+                align-items: center
+                & .icon 
+                  display: flex
+                  align-items: center
+                  & .fab 
+                    +brand 
+                    color: #EE3B24
+                    font-size: 18px 
+                  & h5 
+                    margin-left: 5px 
+                    font-size: 18px 
+                    color: #262626
+                    +ral_med
+                & .date 
+                  & span 
+                    color: #888888
+                    font-size: 12px 
+                    font-style: italic
+              & p 
+                margin-top: 15px
+                padding-left: 25px 
+                padding-bottom: 25px 
+                line-height: 25px 
+                font-size: 14px  
+                & a 
+                  color: #EE3B24
+        & .comments 
+          position: absolute
+          margin-left: 78px 
+          & .btn 
+            & button 
+              padding: 10px 15px 
+              background: #f8f8f8
+              border-top: 5px solid #464646
+              border-top-left-radius: 3px 
+              border-top-right-radius: 3px 
+              color: #222222
+              font-size: 14px 
+          & .content 
+            background: #f8f8f8
+            padding: 55px 15px 15px 
+            display: none 
+            & .block 
+              border-bottom: 1px solid #eeeeee
+              margin-top: 10px 
+              &:first-of-type
+                margin-top: 0
+              &:last-of-type
+                border-bottom: none 
+              & .title 
+                display: flex
+                justify-content: space-between
+                align-items: center
+                & h5 
+                  margin-left: 5px 
+                  font-size: 18px 
+                  color: #262626
+                  +ral_med
+                & span 
+                  color: #888888
+                  font-size: 12px 
+                  font-style: italic
+              & p 
+                margin-top: 15px
+                padding-left: 25px 
+                padding-bottom: 25px 
+                line-height: 25px 
+                font-size: 14px  
+
+
+
+
+
+

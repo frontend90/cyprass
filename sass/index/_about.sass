@@ -8,7 +8,7 @@
     display: flex
     justify-content: space-between
     & .about-nav 
-      & .block 
+      & .about-block 
         text-align: center
         border: 1px solid #eeeeee
         border-radius: 5px 
@@ -18,15 +18,15 @@
         cursor: pointer
         transition: 0.3s
         position: relative
-        &.active 
+        &.about-active 
           background: #EE3B24
-        &.active .fas 
+        &.about-active .fas 
           color: #EE3B24
-        &.active .fab 
+        &.about-active .fab 
           color: #EE3B24
-        &.active h5 
+        &.about-active h5 
           color: #ffffff
-        &.active::before
+        &.about-active::before
           content: ''
           position: absolute
           background: #EE3B24

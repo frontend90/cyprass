@@ -1,0 +1,38 @@
+.blog-header 
+  height: 90px 
+  & .top-menu 
+    position: fixed
+    width: 100% 
+    padding: 25px 0 
+    background: #ffffff
+    z-index: 5
+    top: 0
+    box-shadow: 0 0 10px rgba(#000000,0.12)
+    & .top-menu-wrap
+      display: flex 
+      align-items: center
+      justify-content: space-between
+      & .logo 
+        display: flex
+        align-items: center
+        & h3 
+          margin-left: 10px 
+          text-transform: uppercase 
+          & a 
+            color: #262626
+            +ral_med 
+      & .menu 
+        & a 
+          text-transform: uppercase
+          color: #3a3a3a
+          +ral_med
+          font-size: 14px 
+          font-weight: 700
+          margin-right: 30px
+          transition: 0.3s
+          &.active 
+            color: #EE3B24
+          &:hover
+            color: #EE3B24
+          &:last-of-type
+            margin-right: 0 

@@ -41,7 +41,7 @@ $(function () {
 
 /*************** фильтр about   **************/
 $(function () {
-  $('.about-nav .block').click(function (event) {
+  $('.about-nav .about-block').click(function (event) {
     event.preventDefault();
     var get_id = this.id;
     var get_current = $('.about-content .block.' + get_id);
@@ -52,12 +52,12 @@ $(function () {
 
 /*************  about active button   *****************/
 var header = document.getElementById("active-block");
-var btns = header.getElementsByClassName("block");
+var btns = header.getElementsByClassName("about-block");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var current = document.getElementsByClassName("about-active");
+    current[0].className = current[0].className.replace(" about-active", "");
+    this.className += " about-active";
   });
 }
 
@@ -112,7 +112,7 @@ $('.blog-slider').slick({
   autoplay: true
 });
 
-/************    feddback slick      **************/
+/************    feedback slick      **************/
 $('.feedback-slider').slick({
   prevArrow: $('.feedback-slider-left'),
   nextArrow: $('.feedback-slider-right'),
