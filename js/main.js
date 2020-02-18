@@ -39,6 +39,20 @@ $(function () {
   });
 });
 
+/*********   blog-tab (tweets, comments)   ************/
+var burger = document.getElementsByClassName('blog-block');
+
+for (var i = 0; i < burger.length; i++) {
+  burger[i].addEventListener('click', function () {
+    if (!(this.classList.contains('blog-active'))) {
+      for (var i = 0; i < burger.length; i++) {
+        burger[i].classList.remove('blog-active');
+      }
+      this.classList.add('blog-active');
+    }
+  });
+}
+
 /*************** фильтр about   **************/
 $(function () {
   $('.about-nav .about-block').click(function (event) {
@@ -90,7 +104,7 @@ for (var i = 0; i < burger.length; i++) {
       }
       this.classList.add('active');
     }
-  })
+  });
 }
 
 /************    team slick      **************/

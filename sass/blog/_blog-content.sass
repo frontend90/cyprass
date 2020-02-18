@@ -425,9 +425,16 @@
         margin-top: 60px 
         width: 360px 
         position: relative
-        height: 550px 
-        & .tweets 
-          position: absolute
+        height: calc(100% - 85%)
+        display: flex
+        & .blog-block 
+          &.blog-active .btn button 
+            border-top: 5px solid red 
+            background: #f3f3f3
+          &.blog-active .content 
+            background: #f3f3f3
+          &.blog-active .content 
+            display: block 
           & .btn 
             & button 
               padding: 10px 15px 
@@ -440,6 +447,9 @@
           & .content 
             background: #f8f8f8
             padding: 55px 15px 15px 
+            position: absolute
+            left: 0
+            display: none 
             & .block 
               border-bottom: 1px solid #eeeeee
               margin-top: 10px 
@@ -477,47 +487,20 @@
                 & a 
                   color: #EE3B24
         & .comments 
-          position: absolute
-          margin-left: 78px 
           & .btn 
-            & button 
-              padding: 10px 15px 
-              background: #f8f8f8
-              border-top: 5px solid #464646
-              border-top-left-radius: 3px 
-              border-top-right-radius: 3px 
-              color: #222222
-              font-size: 14px 
+            margin-left: 5px 
           & .content 
-            background: #f8f8f8
-            padding: 55px 15px 15px 
             display: none 
             & .block 
-              border-bottom: 1px solid #eeeeee
-              margin-top: 10px 
-              &:first-of-type
-                margin-top: 0
-              &:last-of-type
-                border-bottom: none 
-              & .title 
-                display: flex
-                justify-content: space-between
-                align-items: center
+              & .title
                 & h5 
-                  margin-left: 5px 
                   font-size: 18px 
                   color: #262626
-                  +ral_med
+                  +ral_med 
                 & span 
                   color: #888888
                   font-size: 12px 
                   font-style: italic
-              & p 
-                margin-top: 15px
-                padding-left: 25px 
-                padding-bottom: 25px 
-                line-height: 25px 
-                font-size: 14px  
       & .blog-stream
         & h5 
           font-size: 18px 

@@ -3220,14 +3220,26 @@ h4 span {
   margin-top: 60px;
   width: 360px;
   position: relative;
-  height: 550px;
+  height: calc(100% - 85%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .tweets {
-  position: absolute;
+.blog-content .blog-content-wrap .blog-sidebar .blog-tab .blog-block.blog-active .btn button {
+  border-top: 5px solid red;
+  background: #f3f3f3;
 }
 
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .tweets .btn button {
+.blog-content .blog-content-wrap .blog-sidebar .blog-tab .blog-block.blog-active .content {
+  background: #f3f3f3;
+}
+
+.blog-content .blog-content-wrap .blog-sidebar .blog-tab .blog-block.blog-active .content {
+  display: block;
+}
+
+.blog-content .blog-content-wrap .blog-sidebar .blog-tab .blog-block .btn button {
   padding: 10px 15px;
   background: #f8f8f8;
   border-top: 5px solid #464646;
@@ -3237,25 +3249,28 @@ h4 span {
   font-size: 14px;
 }
 
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .tweets .content {
+.blog-content .blog-content-wrap .blog-sidebar .blog-tab .blog-block .content {
   background: #f8f8f8;
   padding: 55px 15px 15px;
+  position: absolute;
+  left: 0;
+  display: none;
 }
 
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .tweets .content .block {
+.blog-content .blog-content-wrap .blog-sidebar .blog-tab .blog-block .content .block {
   border-bottom: 1px solid #eeeeee;
   margin-top: 10px;
 }
 
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .tweets .content .block:first-of-type {
+.blog-content .blog-content-wrap .blog-sidebar .blog-tab .blog-block .content .block:first-of-type {
   margin-top: 0;
 }
 
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .tweets .content .block:last-of-type {
+.blog-content .blog-content-wrap .blog-sidebar .blog-tab .blog-block .content .block:last-of-type {
   border-bottom: none;
 }
 
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .tweets .content .block .title {
+.blog-content .blog-content-wrap .blog-sidebar .blog-tab .blog-block .content .block .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3267,7 +3282,7 @@ h4 span {
           align-items: center;
 }
 
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .tweets .content .block .title .icon {
+.blog-content .blog-content-wrap .blog-sidebar .blog-tab .blog-block .content .block .title .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3276,26 +3291,26 @@ h4 span {
           align-items: center;
 }
 
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .tweets .content .block .title .icon .fab {
+.blog-content .blog-content-wrap .blog-sidebar .blog-tab .blog-block .content .block .title .icon .fab {
   font-family: 'fa-brands-400';
   color: #EE3B24;
   font-size: 18px;
 }
 
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .tweets .content .block .title .icon h5 {
+.blog-content .blog-content-wrap .blog-sidebar .blog-tab .blog-block .content .block .title .icon h5 {
   margin-left: 5px;
   font-size: 18px;
   color: #262626;
   font-family: 'Raleway-Medium';
 }
 
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .tweets .content .block .title .date span {
+.blog-content .blog-content-wrap .blog-sidebar .blog-tab .blog-block .content .block .title .date span {
   color: #888888;
   font-size: 12px;
   font-style: italic;
 }
 
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .tweets .content .block p {
+.blog-content .blog-content-wrap .blog-sidebar .blog-tab .blog-block .content .block p {
   margin-top: 15px;
   padding-left: 25px;
   padding-bottom: 25px;
@@ -3303,58 +3318,19 @@ h4 span {
   font-size: 14px;
 }
 
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .tweets .content .block p a {
+.blog-content .blog-content-wrap .blog-sidebar .blog-tab .blog-block .content .block p a {
   color: #EE3B24;
 }
 
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .comments {
-  position: absolute;
-  margin-left: 78px;
-}
-
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .comments .btn button {
-  padding: 10px 15px;
-  background: #f8f8f8;
-  border-top: 5px solid #464646;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  color: #222222;
-  font-size: 14px;
+.blog-content .blog-content-wrap .blog-sidebar .blog-tab .comments .btn {
+  margin-left: 5px;
 }
 
 .blog-content .blog-content-wrap .blog-sidebar .blog-tab .comments .content {
-  background: #f8f8f8;
-  padding: 55px 15px 15px;
   display: none;
 }
 
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .comments .content .block {
-  border-bottom: 1px solid #eeeeee;
-  margin-top: 10px;
-}
-
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .comments .content .block:first-of-type {
-  margin-top: 0;
-}
-
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .comments .content .block:last-of-type {
-  border-bottom: none;
-}
-
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .comments .content .block .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .blog-content .blog-content-wrap .blog-sidebar .blog-tab .comments .content .block .title h5 {
-  margin-left: 5px;
   font-size: 18px;
   color: #262626;
   font-family: 'Raleway-Medium';
@@ -3364,14 +3340,6 @@ h4 span {
   color: #888888;
   font-size: 12px;
   font-style: italic;
-}
-
-.blog-content .blog-content-wrap .blog-sidebar .blog-tab .comments .content .block p {
-  margin-top: 15px;
-  padding-left: 25px;
-  padding-bottom: 25px;
-  line-height: 25px;
-  font-size: 14px;
 }
 
 .blog-content .blog-content-wrap .blog-sidebar .blog-stream h5 {
